@@ -25,4 +25,6 @@ Notice how the rank of the tensor is maintained.
 if keepdims = 0 and axis = 1:
 ReduceMax(T) = [2, 4]. 
 
-If keepdims were 1 though, F(T) = [[2], [4]] where F = ReduceMax
+If keepdims were 1 though, F(T) = [[2], [4]] where F = ReduceMax.
+
+- IT IS NOT A SUM OPERATOR, YOU CHOOSE THE BIGGEST NUMBER ALONG THAT AXIS.
