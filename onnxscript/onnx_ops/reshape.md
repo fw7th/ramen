@@ -4,7 +4,7 @@ Reshapes a tensor to a given output shape. First arg is the tensor to be reshape
 When you use -1 in an axis of the desired output shape, it lets `Reshape` infer one dimension from the total number of elements.
 Example
 ```
-Y.shape = [N, 512, 1, 1]
+Y = [N, 512, 1, 1]
 desired_output = [N, -1]
 
 It'd work like this:

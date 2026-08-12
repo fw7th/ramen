@@ -1,3 +1,4 @@
 - How does jinja render things on a template html?
 - How is code converted to a site in html?
 - How does postgresql work and how does sqlalchemy link to it?
+- How does fastapi load a server on your pc?

@@ -22,3 +22,13 @@ The class is big so right now I don't know it's full internals, but it's class d
 --- 
 
 ONNX IR is an in-memory Intermediate Representation that supports the full ONNX spec for graph construction, analysis, and transformation, for representing machine learning models as a framework-independent computational graph. Allowing models trained in various frameworks to be run on targeted hardware without rewriting code.
+
+---
+
+Ok after a bit of probling, I noticed an issue, if the input dim in [?, 512, 4, 1] is unspecified or is -1, the return value will be [-1, -1] meaning that onnxscript will have to infer all dimensions in the output tensor. 
+
+I don't fully know if this is what the issue is refering to, but I'll check out:
+
+1. What issue creator is actually tagging and talking about, line by line
+2. Commits linked by copilot as fixes
+3. Their proposed solution, if it has already been fixed and if the issue should be closed.
